@@ -1,0 +1,13 @@
+const bannerSlider = new Swiper('.banner__slider', {
+  spaceBetween: 12,
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: '.banner__pagination',
+    type: 'bullets',
+  },
+  navigation: {
+    nextEl: '.banner__arrow.next',
+    prevEl: '.banner__arrow.prev',
+  },
+});
