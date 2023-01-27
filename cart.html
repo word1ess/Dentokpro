@@ -1575,6 +1575,7 @@
       display: none !important;
     }
   </style>
+  <link rel="stylesheet" id="css" href="./css/style.css" type="text/css" media="all">
 </head>
 
 <body>
@@ -1774,11 +1775,13 @@
   
                   <td class="product-quantity" data-title="Количество">
                     <div class="quantity">
-                      <label class="screen-reader-text" for="quantity_63d00212a19e5">Количество товара Ena Post сверло для
-                        штифтов 10% конусности, Ø 0,9 – 2,0 мм (3 метки)</label>
-                      <input type="number" id="quantity_63d00212a19e5" class="input-text qty text" step="1" min="0" max=""
-                        name="cart[6f3ef77ac0e3619e98159e9b6febf557][qty]" value="1" title="Кол-во" size="4"
-                        placeholder="" inputmode="numeric" autocomplete="off">
+                      <div class="products__lot">
+                        <button id="minus" class="products__btn">
+                        </button>
+                        <p id="lot">2 шт</p>
+                        <button id="plus" class="products__btn">
+                        </button>
+                      </div>
                     </div>
                   </td>
   
@@ -1818,11 +1821,13 @@
   
                   <td class="product-quantity" data-title="Количество">
                     <div class="quantity">
-                      <label class="screen-reader-text" for="quantity_63d00212a19e5">Количество товара Ena Post сверло для
-                        штифтов 10% конусности, Ø 0,9 – 2,0 мм (3 метки)</label>
-                      <input type="number" id="quantity_63d00212a19e5" class="input-text qty text" step="1" min="0" max=""
-                        name="cart[6f3ef77ac0e3619e98159e9b6febf557][qty]" value="1" title="Кол-во" size="4"
-                        placeholder="" inputmode="numeric" autocomplete="off">
+                      <div class="products__lot">
+                        <button id="minus" class="products__btn">
+                        </button>
+                        <p id="lot">2 шт</p>
+                        <button id="plus" class="products__btn">
+                        </button>
+                      </div>
                     </div>
                   </td>
   
@@ -1862,7 +1867,8 @@
             <div class="delivery__item item-delivery">
               <div class="item-delivery__row">
                 <div class="item-delivery__label">
-                  <label>
+                  <label class="delivery__checkbox radio">
+                    <input class="custom-radio" type="radio" name="delivery-type" value="male">
                     <p>Доставка по адресу</p>
                   </label>
                 </div>
@@ -1871,7 +1877,8 @@
               </div>
               <div class="item-delivery__row">
                 <div class="item-delivery__label">
-                  <label>
+                  <label class="delivery__checkbox radio">
+                    <input class="custom-radio" type="radio" name="delivery-type" value="male">
                     <p>Экспресс доставка по адресу</p>
                   </label>
                 </div>
@@ -1880,7 +1887,8 @@
               </div>
               <div class="item-delivery__row">
                 <div class="item-delivery__label">
-                  <label>
+                  <label class="delivery__checkbox radio">
+                    <input class="custom-radio" type="radio" name="delivery-type" value="male">
                     <p>Пункт выдачи</p>
                   </label>
                 </div>
@@ -1892,7 +1900,8 @@
             <div class="delivery__item item-delivery">
               <div class="item-delivery__row">
                 <div class="item-delivery__label">
-                  <label>
+                  <label class="delivery__checkbox radio">
+                    <input class="custom-radio" type="radio" name="delivery-payment" value="male">
                     <p>Картой онлайн</p>
                   </label>
                 </div>
@@ -1901,7 +1910,8 @@
               </div>
               <div class="item-delivery__row">
                 <div class="item-delivery__label">
-                  <label>
+                  <label class="delivery__checkbox radio">
+                    <input class="custom-radio" type="radio" name="delivery-payment" value="male">
                     <p>Картой курьеру</p>
                   </label>
                 </div>
@@ -1910,7 +1920,8 @@
               </div>
               <div class="item-delivery__row">
                 <div class="item-delivery__label">
-                  <label>
+                  <label class="delivery__checkbox radio">
+                    <input class="custom-radio" type="radio" name="delivery-payment" value="male">
                     <p>Банковский перевод</p>
                   </label>
                 </div>
@@ -1919,7 +1930,8 @@
               </div>
               <div class="item-delivery__row">
                 <div class="item-delivery__label">
-                  <label>
+                  <label class="delivery__checkbox radio">
+                    <input class="custom-radio" type="radio" name="delivery-payment" value="male">
                     <p>Наличными/картой при самовывозе</p>
                   </label>
                 </div>
